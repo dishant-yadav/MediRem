@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #ccc;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+div .open {
+  background-color: rgba(9, 15, 255, 0.08);
+  color: rgba(9, 15, 255, 1);
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem black;
+}
+.open h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+div h4 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+}
+main {
+  background-color: rgba(200, 255, 255, 0.522);
+  color: black;
+  padding: 2rem;
+  /* width: 100%; */
+}
+#medDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+border-radius: 2rem;
+}
+.label {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.input {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+input[type="text"] {
+  font-size: 1rem;
+  font-weight: 300;
+  /* width: 11%; */
+}
+button{
+    width: 10rem;
+    background-color: rgb(10, 41, 242);
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 1.2rem;
+    transition: all 0.3s ease;
+}
+button:hover{
+    transform: scale(1.1,1.1);
+    transform: perspective(5);
+    transition: all 0.3s ease;
+}
