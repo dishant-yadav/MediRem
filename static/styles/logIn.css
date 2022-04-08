@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url(background3.jpg);
+  background-image: url(/Resources/Images/background.jpg);
   background-size: cover;
   font-size: 10px;
   font-family: "Poppins", "sans-serif";
@@ -55,6 +55,10 @@ body {
   font-family: "Raleway", "sans-serif";
   color: black;
 }
+.container input:focus{
+  border-bottom: 1px solid #000;
+
+}
 ::placeholder {
   text-transform: uppercase;
 }
@@ -72,6 +76,7 @@ body {
   width: 100%;
   margin: 1.5rem auto;
   text-align: center;
+  margin-top: 40px;
 }
 form button {
   width: 11rem;
@@ -88,6 +93,9 @@ form button {
 form button:hover {
   transform: scale(1.1, 1.2);
   transition: 0.3s;
+}
+#signUp{
+  margin-top:40px;
 }
 div #signUp{
   text-align: center;
