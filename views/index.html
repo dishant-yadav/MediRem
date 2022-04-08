@@ -1,52 +1,32 @@
 <!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <title>Welcome to MediRem</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MediRem</title>
-    <script
-      src="https://kit.fontawesome.com/846150afa6.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
   </head>
   <body>
-    <!-- welcome section -->
-    <section>
-      <div id="container">
-        <!-- <i class="fa-solid fa-plus-large" id="add">ADD</i> -->
-        <div class="open">
-          <h3>Welome to MediRem</h3>
-          <h4>Your one stop solution to all your medical needs!!!</h4>
-        </div>
-      </div>
-    </section>
-    <!-- yeh just bhi ke liye h -->
- <br> <br> <br> <br> <br>
-    <main>
-      <div id="medDetails">
-          <label for="medName" id="medNameLabel" class="label"
-            >Name of medicine :
-          </label>
-          <input
-            type="text"
-            name=""
-            class="input"
-            id="medName"
-            placeholder="Digene"
-          />
-        
-          <label for="medtime" class="label" id="medTimeLabel"
-            >Time for medicine :
-          </label>
-          <input type="time" name="" class="input" id="medtime" value="10:10" />
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">MediRem</label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Meet Our Team</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="/views/signUp.html">Register Now</a></li>
 
-          <button id="addBtn">
-              Add to my med list
-          </button>
-        </div>
-      <a href="signUp.html">Signup now</a>
-    </main>
+      </ul>
+    </nav>
+    <section></section>
   </body>
 </html>
