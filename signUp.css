@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(signUpPAGE.jpg);
+  background-size: cover;
+  font-size: 10px;
+  font-family: "Poppins", "sans-serif";
+}
+.container {
+  width: 36rem;
+  height: 40rem;
+  margin: 8% auto;
+  background: #fff;
+  border-radius: 1rem;
+  position: relative;
+}
+.container h3 {
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #777;
+  font-size: 2.4rem;
+  text-decoration: underline;
+}
+.container form {
+  width: 28rem;
+  position: absolute;
+  top: 10rem;
+  left: 4rem;
+}
+.container input {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  margin: 0.5rem 0rem;
+  border: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+  font-family: "Raleway", "sans-serif";
+}
+::placeholder{
+  text-transform: uppercase;
+}
+.text {
+  color: darkslateblue;
+  font-size: 1.5rem;
+  font-weight: 450;
+  letter-spacing: 0.2px;
+  font-family: "Raleway", "sans-serif";
+}
+.btn {
+  color: black;
+}
+.btn-box {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+form button {
+  width: 11rem;
+  height: 3.5rem;
+  margin: 0 auto;
+  background-color: rgb(10, 78, 105, 0.5);
+  border: 0;
+  border-radius: 3rem;
+  outline: none;
+  cursor: pointer;
+  margin: 1rem;
+  transition: 0.3s;
+}
+form button:hover {
+  transform: scale(1.1, 1.2);
+  transition: 0.3s;
+}
+.step-row {
+  width: 36rem;
+  height: 4rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 -0.1rem 0.5rem -0.1rem #000;
+  border-radius: 1rem;
+  position: relative;
+}
+.step-col {
+  width: 12rem;
+  text-align: center;
+  color: #333;
+  position: relative;
+  font-size: 2rem;
+}
+#progress {
+  position: absolute;
+  height: 100%;
+  width: 12rem;
+  background-color: #777;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+/* the arrow shape */
+/* #progress::after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-top: 2rem solid transparent;
+  border-bottom: 2rem solid transparent;
+  position: absolute;
+  right: -2rem;
+  top: 0;
+  border-left: 2rem solid #727272;
+} */
+#s-links {
+  display: none;
+}
+#p-details {
+  display: none;
+}
+div #login {
+  text-align: center;
+}
+div #login a {
+  text-decoration: none;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+}
