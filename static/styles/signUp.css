@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url(signUpPAGE.jpg);
+  background-image: url(/Resources/Images/background.jpg);
   background-size: cover;
   font-size: 10px;
   font-family: "Poppins", "sans-serif";
@@ -42,6 +42,9 @@ body {
   background: transparent;
   font-family: "Raleway", "sans-serif";
   color: #000;
+}
+.container input:focus {
+  border-bottom: 1px solid #000;
 }
 ::placeholder {
   text-transform: uppercase;
