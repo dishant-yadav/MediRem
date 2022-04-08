@@ -15,7 +15,7 @@ body {
   width: 36rem;
   height: 40rem;
   margin: 8% auto;
-  background: #fff;
+  background: rgba(211, 208, 208, 0.9);
   border-radius: 1rem;
   position: relative;
 }
@@ -41,8 +41,9 @@ body {
   outline: none;
   background: transparent;
   font-family: "Raleway", "sans-serif";
+  color: #000;
 }
-::placeholder{
+::placeholder {
   text-transform: uppercase;
 }
 .text {
@@ -125,6 +126,6 @@ div #login {
 div #login a {
   text-decoration: none;
 }
-input[type="number"]{
+input[type="number"] {
   -moz-appearance: textfield;
 }
