@@ -1,93 +1,134 @@
 <!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medicines Show</title>
-    <link rel="stylesheet" href="/static/styles/showMed.css">
-    <script src="/static/scripts/showMed.js"></script>
-</head>
-<body>
-    <main>
-        <div class="container">
-            <div class="tabs text">
-                <ul>
-                    <li class="active text"><a href="#tod" id="tod">Today</a></li>
-                    <li class="text"><a href="tom" id="tom">tommorow</a></li>
-                    <li class="text"><a href="#tweek" id="tweek">This week</a></li>
-                </ul>
-            </div>
-            <div id="tod-list" class="medList text">
-                <ol class="medList text">
-                    <div class="f">
-                    <li>Digine</li>
-                    <p class="time" id="one">at 9:00 PM</p>
-                    <label for="yes" class="y">✔</label>
-                    <input type="radio" value="" class="y" id="yes">
-                    <label for="no" class="n">𐄂</label>
-                    <input type="radio" value="" class="n" id="no">
-                    </legend>
-                </div>
-                <div class="f">
-                    <li>Crocin</li>
-                    <p class="time" id="two">at 1:00 PM</p>
-                    <label for="yes" class="y">✔</label>
-                    <input type="radio" value="" class="y" id="yes">
-                    <label for="no" class="n">𐄂</label>
-                    <input type="radio" value="" class="n" id="no">
-                </div>
-                <div class="f">
-                    <li>Tordex</li>
-                    <p class="time" id="three">at 5:00 PM</p>
-                    <label for="yes" class="y">✔</label>
-                    <input type="radio" value="" class="y" id="yes">
-                    <label for="no" class="n">𐄂</label>
-                    <input type="radio" value="" class="n" id="no">
-                </div>
-                <div class="f">
-                    <li>Crocin</li>
-                    <p class="time" id="two">at 1:00 PM</p>
-                    <label for="yes" class="y">✔</label>
-                    <input type="radio" value="" class="y" id="yes">
-                    <label for="no" class="n">𐄂</label>
-                    <input type="radio" value="" class="n" id="no">
-                </div>
-
-                <div class="f">
-                    <li>Crocin</li>
-                    <p class="time" id="two">at 1:00 PM</p>
-                    <label for="yes" class="y">✔</label>
-                    <input type="radio" value="" class="y" id="yes">
-                    <label for="no" class="n">𐄂</label>
-                    <input type="radio" value="" class="n" id="no">
-                </div>
-                </ul>
-                <div class="btn" id="prev">
-                <a href="#" class="previous round">&#8249;</a>
-                <a href="#" class="next round" id="next">&#8250;</a> 
-            </div>
-
-            <div id="tom-list" class="medList text">
-                <ol class="medList text">
-                    <div class="f">
-                    <li>Digine</li>
-                    <p class="time" id="one">at 9:00 PM</p>
-                    <label for="yes" class="y">✔</label>
-                    <input type="radio" value="" class="y" id="yes">
-                    <label for="no" class="n">𐄂</label>
-                    <input type="radio" value="" class="n" id="no">
-                    </legend>
-                </div>
-                <div class="f">
-                    <li>Crocin</li>
-                    <p class="time" id="two">at 1:00 PM</p>
-                    <label for="yes" class="y">✔</label>
-                    <input type="radio" value="" class="y" id="yes">
-                    <label for="no" class="n">𐄂</label>
-                    <input type="radio" value="" class="n" id="no">
-                </div>
-            </div>
-        </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show Medidcines</title>
+    <link rel="stylesheet" href="/static/styles/showMed.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>Your Medicines</header>
+      <input type="radio" name="slider" checked id="home" />
+      <input type="radio" name="slider" id="blog" />
+      <nav>
+        <label for="home" class="home">Today</label>
+        <label for="blog" class="blog">Tomorrow</label>
+        <div class="slider"></div>
+      </nav>
+      <section>
+        <div class="content content-1">
+          <div class="title">
+            You have <span id="medCount">3</span> medicine for today
+          </div>
+          <table class="tab">
+            <thead>
+              <tr>
+                <th>Sl No.</th>
+                <th>Name of the Medicine</th>
+                <th>Time</th>
+                <th>Type</th>
+                <th>Had the Med?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1.</td>
+                <td>Digene</td>
+                <td>10:00 PM</td>
+                <td>Pill</td>
+                <td>
+                  <div class="btn">
+                    <button>Yes</button>
+                    <button>No</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>2.</td>
+                <td>Crocin</td>
+                <td>01:00 PM</td>
+                <td>Pill</td>
+                <td>
+                  <div class="btn">
+                    <button>Yes</button>
+                    <button>No</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>3.</td>
+                <td>Tordex</td>
+                <td>10:00 PM</td>
+                <td>Syrup</td>
+                <td>
+                  <div class="btn">
+                    <button>Yes</button>
+                    <button>No</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="content content-2">
+          <div class="title">You have <span id="medCount">3</span> medicines for tommorow</div>
+          <table class="tab">
+            <thead>
+              <tr>
+                <th>Sl No.</th>
+                <th>Name of the Medicine</th>
+                <th>Time</th>
+                <th>Type</th>
+                <th>Had the Med?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1.</td>
+                <td>Digene</td>
+                <td>10:00 AM</td>
+                <td>Pill</td>
+                <td>
+                  <div class="btn">
+                    <button>Yes</button>
+                    <button>No</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>2.</td>
+                <td>Crocin</td>
+                <td>01:00 PM</td>
+                <td>Pill</td>
+                <td>
+                  <div class="btn">
+                    <button>Yes</button>
+                    <button>No</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>3.</td>
+                <td>Tordex</td>
+                <td>10:00 PM</td>
+                <td>Syrup</td>
+                <td>
+                  <div class="btn">
+                    <button>Yes</button>
+                    <button>No</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
