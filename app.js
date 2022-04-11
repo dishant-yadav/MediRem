@@ -21,10 +21,14 @@ app.listen(port, () => {
 app.use(express.json());
 app.use('*', morgan("dev"));
 
-
-
+app.get('/', (request, resolve)=> {
+    resolve.render('index')
+})
+app.get('/add', (request, resolve)=> {
+    resolve.render('addmeds')
+})
 
 // 404
-app.use('*', (req,res) => {
-    res.status(404).render('404');
+app.use('*', (request, resolve) => {
+    resolve.status(404).render('404');
 })

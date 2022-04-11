@@ -1,4 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@500&display=swap");
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome to MediRem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" type="text/css" href="../static/styles/style.css" /> -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@500&display=swap");
 
 * {
   padding: 0;
@@ -100,7 +108,7 @@ a:hover {
   }
 }
 section {
-  background: url(bg1.jpg) no-repeat;
+  background: url("/static/res/bg.jpg") no-repeat;
   background-size: cover;
   height: calc(100vh - 80px);
 }
@@ -129,3 +137,30 @@ button:hover{
   font-size: 16px;
   margin-bottom: 10px;
 }
+
+    </style>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">MediRem</label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Meet Our Team</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="/views/signUp.html">Register Now</a></li>
+
+      </ul>
+    </nav>
+    <section></section>
+  </body>
+</html>
